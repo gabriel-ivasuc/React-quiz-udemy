@@ -4,7 +4,7 @@ import logoImg from '../assets/quiz-logo.png';
   return (
     <header>
       <img src={logoImg} alt="QuizLogo"/>
-      <h1>React Quizz</h1>
+      <h1>Gabriel's Quizzz</h1>
     </header>
   )
 }
