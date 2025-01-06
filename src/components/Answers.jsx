@@ -8,7 +8,6 @@ export default function Answers( {answers, selectedAnswer, answerState, onSelect
     shuffledAnswers.current.sort(() => Math.random() - 0.5);
   }
 
-
   return (
     <ul id='answers'>
           {shuffledAnswers.current.map((answer) => {
@@ -27,6 +26,7 @@ export default function Answers( {answers, selectedAnswer, answerState, onSelect
                 <button
                   onClick={() => onSelect(answer)}
                   className={cssClass}
+                  disabled={answerState !== ''}
                 >
                   {answer}
                 </button>
